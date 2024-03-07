@@ -15,10 +15,6 @@ app.use(usersRoutes)
 app.use(commentRoutes)
 app.use(booksRoutes)
 
-app.use((req, res, next) =>{
-    res.status(404).json({
-        message:'endpoint not fount'
-    })
-})
+
 
 export default app;
